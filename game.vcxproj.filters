@@ -23,10 +23,19 @@
     <ClCompile Include="deps\imgui\backends\imgui_impl_sdlrenderer.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
+    <ClCompile Include="src\foundation\asset\asset.cpp">
+      <Filter>foundation\asset</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="imgui">
       <UniqueIdentifier>{85401739-bbd9-4a98-ae9a-0070ff676f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="foundation">
+      <UniqueIdentifier>{dcb00ab6-6556-4b0a-aa8d-47c368835cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="foundation\asset">
+      <UniqueIdentifier>{8f7cb798-5b7e-435c-81be-035052288210}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +62,18 @@
     </ClInclude>
     <ClInclude Include="deps\imgui\backends\imgui_impl_sdlrenderer.h">
       <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\foundation\asset\asset.h">
+      <Filter>foundation\asset</Filter>
+    </ClInclude>
+    <ClInclude Include="src\foundation\hash.h">
+      <Filter>foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\foundation\reference_count.h">
+      <Filter>foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\foundation\observer.h">
+      <Filter>foundation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
