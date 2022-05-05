@@ -26,6 +26,9 @@
     <ClCompile Include="src\foundation\asset\asset.cpp">
       <Filter>foundation\asset</Filter>
     </ClCompile>
+    <ClCompile Include="src\foundation\thread_pool.cpp">
+      <Filter>foundation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="imgui">
@@ -73,6 +76,9 @@
       <Filter>foundation</Filter>
     </ClInclude>
     <ClInclude Include="src\foundation\observer.h">
+      <Filter>foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\foundation\thread_pool.h">
       <Filter>foundation</Filter>
     </ClInclude>
   </ItemGroup>

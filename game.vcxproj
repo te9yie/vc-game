@@ -92,6 +92,7 @@
     <ClCompile Include="deps\imgui\imgui_tables.cpp" />
     <ClCompile Include="deps\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\foundation\asset\asset.cpp" />
+    <ClCompile Include="src\foundation\thread_pool.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,7 @@
     <ClInclude Include="src\foundation\hash.h" />
     <ClInclude Include="src\foundation\reference_count.h" />
     <ClInclude Include="src\foundation\observer.h" />
+    <ClInclude Include="src\foundation\thread_pool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

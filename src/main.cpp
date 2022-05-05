@@ -2,10 +2,12 @@
 
 #include <cstdlib>
 #include <memory>
+#include <utility>
 
 #include "backends/imgui_impl_sdl.h"
 #include "backends/imgui_impl_sdlrenderer.h"
 #include "foundation/asset/asset.h"
+#include "foundation/thread_pool.h"
 #include "imgui.h"
 
 namespace {
@@ -26,6 +28,8 @@ int main(int /*argc*/, char* /*argv*/[]) {
   const char* TITLE = "GAME";
   const int SCREEN_WIDTH = 16 * 80;
   const int SCREEN_HEIGHT = 9 * 80;
+
+  foundation::ThreadPool pool(SDL_GetCPUCount() * 2);
 
   if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
     SDL_LogError(SDL_LOG_CATEGORY_SYSTEM, "%s", SDL_GetError());
